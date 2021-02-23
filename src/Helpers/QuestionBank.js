@@ -5,7 +5,7 @@ export const Questions = [
     optionB: '21',
     optionC: '4',
     optionD: '2',
-    answer: 'optionC',
+    answer: 'C',
   },
   {
     prompt: 'Which of this is not a programming language?',
@@ -13,7 +13,7 @@ export const Questions = [
     optionB: 'JavaScript',
     optionC: 'MC-03',
     optionD: 'Java',
-    answer: 'optionC',
+    answer: 'C',
   },
   {
     prompt: 'Which of this is not a javascript framework?',
@@ -21,6 +21,6 @@ export const Questions = [
     optionB: 'Angular',
     optionC: 'Vue',
     optionD: 'Java',
-    answer: 'optionD',
+    answer: 'D',
   },
 ];
