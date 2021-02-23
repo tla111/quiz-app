@@ -1,7 +1,7 @@
 import React from 'react';
 
 const EndScreen = () => {
-  return <div>End Screen</div>;
+  return <div className='EndScreen'>End Screen</div>;
 };
 
 export default EndScreen;
