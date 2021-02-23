@@ -3,10 +3,19 @@ import { QuizContext } from '../Helpers/Contexts';
 import '../App.css';
 
 const MainMenu = () => {
-  const { gameState, setGameState } = useContext(QuizContext);
+  const { gameState, setGameState, userName, setUserName } = useContext(
+    QuizContext
+  );
   return (
     <div className='Menu'>
-      {''}
+      <label>Enter Your Name:</label>
+      <input
+        type='text'
+        placeholder='Ex. John Smith'
+        onChange={(event) => {
+          setUserName(event.target.value);
+        }}
+      />
       <button
         onClick={() => {
           setGameState('quiz');
