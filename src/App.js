@@ -1,7 +1,21 @@
+import React, { useState } from 'react';
 import './App.css';
+import MainMenu from './Components/MainMenu';
+import Quiz from './Components/Quiz';
+import EndScreen from './Components/EndScreen';
 
 function App() {
-  return <div className='App'>a</div>;
+  const [gameState, setGameState] = useState('menu');
+
+  return (
+    <div className='App'>
+      <h1>Quiz App</h1>
+
+      {gameState === 'menu' && <MainMenu />}
+      {gameState === 'quiz' && <Quiz />}
+      {gameState === 'endScreen' && <EndScreen />}
+    </div>
+  );
 }
 
 export default App;
